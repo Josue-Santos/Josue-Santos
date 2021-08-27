@@ -10,8 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Home</a>
@@ -19,7 +23,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 1;">
               <ul class="nav navbar-nav  navbar-center mr-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="mywork.html">My Work</a>
@@ -41,16 +45,25 @@
         <img id='profile_pic' src='media/profile_pic3.jpg' alt='profile_pic.jpg'>
         <div id="first_container_text">
             <h1 style="text-align: center;">Hello!</h1>
-            <h4 style="color:rgb(128, 122, 122);">My name is Josue Santos and I aspire to be a FullStack Web Developer .
-                I would love to here from you, whether it's a project, job opportunity or just chat. Feel free to contact me.
-            </h4>
+            <h5 style="color:rgb(128, 122, 122);">My name is Josue Santos and I aspire to be a FullStack Web Developer .
+                I would love to hear from you, whether it's a project, job opportunity or just chat. Feel free to contact me.
+            </h5>
         </div>       
     </container>
     <container id="second_container">
         <a href="mywork.html" role="button" class="btn btn-secondary" id="second_container_btn_1">My Work</a>
         <a href="mywork.html" role="button" class="btn btn-secondary" id="second_container_btn_2">Contact Me</a>
     </container>
+    <div id="floating_images">
+      <img class="background_images" src="media/python.png" alt="python_logo">
+      <img class="background_images" src="media/c++.png" alt="c++_logo">
+      <img class="background_images" src="media/javascript.png" alt="javasript_logo"> 
+      <img class="background_images" src="media/html.png" alt="html_logo"> 
+      <img class="background_images" src="media/css.png" alt="css_logo"> 
+      <img class="background_images" src="media/django.png" alt="django_logo"> 
+    </div>
     
+
     
 </body>
 </html>

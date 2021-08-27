@@ -1,22 +1,19 @@
 :root{
     --clr-primary-300: #F3EEd9;
 }
-.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-}
+
 #home_email{
     position:fixed;
     left:50%;
     transform: translate(-50%);
-    top:12%;
+    top:180px;
     color: rgb(128, 122, 122);
     font-size: 1.5rem;
+ 
 }
 #hr_1{
-    position: fixed;
-    top:150px;
+    position: absolute;
+    top:200px;
     left:50%;
     transform: translate(-50%);
     height: 1px; 
@@ -30,16 +27,15 @@
     position: fixed;
     left: 50%;
     transform: translate(-50%);
-    top:22%;
+    top:220px;
     width: 100%;
     height:500px;
+    min-height: 500px;
     min-width: 425px;
     max-width: 800px;
     overflow: scroll;
     animation-name:appear;
-    animation-duration:3s;  
-    animation-fill-mode: forwards;
-    
+    animation-duration:5s ;  
 }
 @keyframes appear {
     0%   {opacity: 0%;}
@@ -55,6 +51,7 @@
     width: auto;
     padding-inline: 80px;
     
+    
 }
 #profile_pic{
     position: relative;
@@ -64,7 +61,7 @@
     border-radius: 50%;
     height:200px;
     width: 200px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 #profile_pic:hover {
@@ -82,19 +79,56 @@
     animation-name:appear;
     animation-duration:3s;  
     animation-fill-mode: forwards;
-
+    
 
 }
 #second_container_btn_1{
     position: relative;
     left: 200px;
     transform: translate(-50%);
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     
 }
 #second_container_btn_2{
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     left: 250px;
     transform: translate(-50%);
+}
+#floating_images{
+    position:fixed;
+    left:50%;
+    transform: translate(-50%);
+    top:55px;
+    width: 500px;
+    height: 120px;
+}
+.background_images{
+    position:relative;
+    left:130px;
+    top:50px;
+    height: 50px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 }
