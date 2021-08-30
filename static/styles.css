@@ -45,7 +45,7 @@ body{
     min-width: 400px;
     max-width: 800px;
     animation-name:appear;
-    animation-duration:5s ;  
+    animation-duration:3s ;  
     
 }
 @keyframes appear {
@@ -163,7 +163,7 @@ body{
     min-width: 400px;
     max-width: 800px;
     animation-name:appear;
-    animation-duration:5s ;
+    animation-duration:3s ;
     
 }
 #about_first_container_text{
