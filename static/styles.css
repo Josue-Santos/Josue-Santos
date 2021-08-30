@@ -1,9 +1,20 @@
 :root{
     --clr-primary-300: #F3EEd9;
 }
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url("/media/background.png");
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased; 
+}
 
+  
 #home_email{
-    position:fixed;
+    position:absolute;
     left:50%;
     transform: translate(-50%);
     top:180px;
@@ -24,34 +35,31 @@
 }
 #first_container{
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     left: 50%;
     transform: translate(-50%);
     top:220px;
     width: 100%;
     height:500px;
     min-height: 500px;
-    min-width: 425px;
+    min-width: 400px;
     max-width: 800px;
-    overflow: scroll;
     animation-name:appear;
     animation-duration:5s ;  
+    
 }
 @keyframes appear {
     0%   {opacity: 0%;}
     100% {opacity: 100%;}
     }
-#first_container::-webkit-scrollbar{
-    display: none;
-}
+
 #first_container_text{
     position: relative;
     text-align: left;
     top:80px;
     width: auto;
     padding-inline: 80px;
-    
-    
+
 }
 #profile_pic{
     position: relative;
@@ -62,51 +70,61 @@
     height:200px;
     width: 200px;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+
 }
 #profile_pic:hover {
     box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5);
 
 }
 
+
 #second_container{
-    position: fixed;
+    position: absolute;
     left:50%;
-    top:90%;
     transform: translate(-50%);
-    width: 500px;
+    top:800px;
+    width: 100%;
+    min-width: 400px;
+    max-width: 400px;
     height: 50px;
     animation-name:appear;
     animation-duration:3s;  
     animation-fill-mode: forwards;
     
-
 }
 #second_container_btn_1{
-    position: relative;
-    left: 200px;
-    transform: translate(-50%);
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    left:60px;
     
-    
+}
+#second_container_btn_1:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5);
+
 }
 #second_container_btn_2{
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
-    left: 250px;
-    transform: translate(-50%);
+    left:120px;
+    
+}
+#second_container_btn_2:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5);
+
 }
 #floating_images{
-    position:fixed;
+    position:absolute;
     left:50%;
     transform: translate(-50%);
     top:55px;
-    width: 500px;
+    width: 400px;
     height: 120px;
+    display: flex;
+    flex-direction: row;
 }
 .background_images{
     position:relative;
-    left:130px;
+    left:60px;
     top:50px;
     height: 50px;
     width: 40px;
@@ -130,5 +148,52 @@
 		transform: translatey(0px);
 	}
 }
+.navbar{
+    z-index: 1;
+}
+#about_first_container{
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top:220px;
+    width: 100%;
+    height:1200px;
+    min-height: 500px;
+    min-width: 400px;
+    max-width: 800px;
+    animation-name:appear;
+    animation-duration:5s ;
+    
+}
+#about_first_container_text{
+    position: relative;
+    text-align: left;
+    top:80px;
+    width: auto;
+    padding-inline: 80px;
+    color:rgb(128, 122, 122);
+    padding-bottom: 100px;
+}
+#about_profile_pic{
+    position: relative;
+    top:50px;
+    left:50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    height:200px;
+    width: 200px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+#bottom_fade {
+	width: 100%;
+	height: 200px;
+	z-index: 1;
+	position: fixed;
+	bottom: 0px;
+    left: 50%;
+    transform:translate(-50%);
+	background: url("/media/bottom-fade.png") bottom center ;
+}
+
