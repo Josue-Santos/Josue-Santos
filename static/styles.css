@@ -253,9 +253,20 @@ margin-bottom: 50px;
     overflow-y: hidden;
     border-radius: 20px;
     box-shadow: -20px 5px 40px 40px rgba(34, 223, 240, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name:appear;
-    animation-duration:3s ;  
+    animation-name:zoomin;
+    animation-duration:1.5s ;  
 
+}
+
+@keyframes zoomin {
+    0%{
+        width: 250%;
+        opacity: 0.5;
+    }
+    100%{
+        width:100%;
+        opacity: 1;
+    }
 }
 #projects_container::-webkit-scrollbar{
   background-color: #0072b1;
