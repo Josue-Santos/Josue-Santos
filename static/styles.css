@@ -253,6 +253,7 @@ margin-bottom: 50px;
     overflow-y: hidden;
     border-radius: 20px;
     box-shadow: -20px 5px 40px 40px rgba(34, 223, 240, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#606fa71c;
     animation-name:zoomin;
     animation-duration:1.5s ;  
 
@@ -299,6 +300,7 @@ margin-bottom: 50px;
     margin-right: 50px;
     margin-top: 50px;
     box-shadow: -20px 15px 15px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 .my_work_github_icon_container{
