@@ -6,7 +6,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    background-image:url("../media/background.png");
+    background-image:url("../media/background3.jpg");
     width: 100%;
     height: 100%;
     overflow:scroll;
@@ -18,7 +18,7 @@ body{
     left:50%;
     transform: translate(-50%);
     top:180px;
-    color: rgb(128, 122, 122);
+    color: white;
     font-size: 1.5rem;
     padding-inline: 25px;
 
@@ -32,8 +32,8 @@ body{
     padding-inline: 25px;
     height: 1px; 
     width: 80%;
-    color: rgba(204, 189, 189, 0.418);
-    background-color: rgba(204, 189, 189, 0.418);
+    color: white;
+    background-color: white;
     
 }
 #first_container{
@@ -44,10 +44,11 @@ body{
     padding-inline: 25px;
     top:220px;
     width: 100%;
-    height:500px;
-    min-height: 500px;
+    height:700px;
     min-width: 425px;
     max-width: 800px;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.335);
     animation-name:appear;
     animation-duration:3s ;  
     
@@ -63,6 +64,7 @@ body{
     top:80px;
     width: auto;
     padding-inline: 80px;
+
 
 }
 #profile_pic{
@@ -168,6 +170,8 @@ body{
     min-height: 500px;
     min-width: 400px;
     max-width: 800px;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.335);
     animation-name:appear;
     animation-duration:3s ;
     
@@ -178,7 +182,7 @@ body{
     top:80px;
     width: auto;
     padding-inline: 80px;
-    color:rgb(128, 122, 122);
+    color:white;
     padding-bottom: 100px;
 }
 #about_profile_pic{
@@ -253,7 +257,7 @@ margin-bottom: 50px;
     overflow-y: hidden;
     border-radius: 20px;
     box-shadow: -20px 5px 40px 40px rgba(34, 223, 240, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color:#606fa71c;
+    background-color: rgba(128, 128, 128, 0.335);
     animation-name:zoomin;
     animation-duration:1.5s ;  
 
