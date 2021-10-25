@@ -1,6 +1,24 @@
 :root {
   --clr-primary-300: #f3eed9;
 }
+#react-projects {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 220px;
+  height: 75px;
+  width: 400px;
+  margin-top: 10px;
+}
+#react-projects h1 {
+  font-size: 25px;
+}
+#react-projects a {
+  font-size: 25px;
+  position: relative;
+  top: -40px;
+  left: 180px;
+}
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
