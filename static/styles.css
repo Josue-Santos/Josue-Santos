@@ -253,10 +253,10 @@ body {
 #projects_container {
   position: absolute;
   display: flex;
-  top: 280px;
+  top: 1100px;
   left: 50%;
   transform: translate(-50%);
-  height: 600px;
+  height: 700px;
   margin-bottom: 600px;
   width: 100%;
   max-width: 1000px;
@@ -269,17 +269,17 @@ body {
   background-color: rgba(128, 128, 128, 0.335);
   animation-name: zoomin;
   animation-duration: 1.5s;
+  padding-top: 2rem;
 }
-
-@keyframes zoomin {
-  0% {
-    width: 250%;
-    opacity: 0.5;
-  }
-  100% {
-    width: 100%;
-    opacity: 1;
-  }
+.projects_container_h1 {
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin: 1rem auto;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%);
 }
 #projects_container::-webkit-scrollbar {
   background-color: #0072b1;
@@ -295,6 +295,63 @@ body {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #0072b1;
   border-radius: 10px;
+}
+#projects_container_c {
+  position: absolute;
+  display: flex;
+  top: 280px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 700px;
+  margin-bottom: 600px;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 400px;
+  overflow: scroll;
+  overflow-y: hidden;
+  border-radius: 20px;
+  box-shadow: -20px 5px 40px 40px rgba(34, 223, 240, 0.24),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(128, 128, 128, 0.335);
+  animation-name: zoomin;
+  animation-duration: 1s;
+  padding-top: 2rem;
+}
+#projects_container_c::-webkit-scrollbar {
+  background-color: #0072b1;
+  border-radius: 10px;
+  height: 10px;
+  width: 10px;
+}
+#projects_container_c::-webkit-scrollbar-track {
+  background-color: darkgray;
+  border-radius: 10px;
+}
+#projects_container_c::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #0072b1;
+  border-radius: 10px;
+}
+.projects_container_c_h1 {
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin: 1rem auto;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@keyframes zoomin {
+  0% {
+    width: 250%;
+    opacity: 0.5;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 .projects {
@@ -332,7 +389,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 1000px;
+  top: 1900px;
   width: 100%;
   min-width: 400px;
   max-width: 400px;
