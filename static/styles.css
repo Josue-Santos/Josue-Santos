@@ -89,6 +89,7 @@ body {
   transform: translate(-50%);
   border-radius: 50%;
   height: 200px;
+  object-fit: cover;
   width: 200px;
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.527),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -397,4 +398,27 @@ body {
   animation-name: appear;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 450px) {
+  #second_container {
+    top: 950px;
+  }
+  #second_container_btn_1 {
+    left: 70px;
+  }
+  #second_container_btn_2 {
+    left: 130px;
+  }
+  .projects_container_c_h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .projects_container_h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  #about_first_container {
+    height: 1600px;
+  }
 }
